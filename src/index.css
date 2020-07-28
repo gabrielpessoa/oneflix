@@ -22,4 +22,25 @@ body {
 
 a {
   color: inherit;
-} 
+}
+
+#root{
+  min-height: calc(100vh - var(--bodyPaddingTop));
+  display: flex;
+  flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: var(--black); 
+}
+ 
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #ff0000;
+  border-radius: 5px;
+}

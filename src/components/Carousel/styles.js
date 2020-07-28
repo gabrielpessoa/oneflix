@@ -45,6 +45,20 @@ export const VideoCardList = styled.ul`
   li {
     margin-right: 16px;
   }
+
+  &::-webkit-scrollbar-track {
+    background-color: #414141;
+    border-radius: 5px;
+  }
+  
+  &::-webkit-scrollbar {
+    height: 11px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: ${({color}) => `${color}`};
+  }
 `;
 
 export const VideoCardGroupContainer = styled.section`
