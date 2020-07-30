@@ -1,0 +1,29 @@
+{
+    "categorias": [
+      {
+        "id": 1,
+        "titulo": "All blue",
+        "cor": "#6BD1FF"
+      },
+      {
+        "id": 2,
+        "titulo": "Chapéus de Palha",
+        "cor": "#ff8c1a"
+      },
+      {
+        "id": 3,
+        "titulo": "Bruno Bandeira",
+        "cor": "#9cd33b"
+      },
+      {
+        "id": 4,
+        "titulo": "Canal MangaQ",
+        "cor": "#ff0000"
+      },
+      {
+        "id": 5,
+        "titulo": "Preview",
+        "cor": "#00C86F"
+      }
+    ]
+}
