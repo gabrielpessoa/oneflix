@@ -1,29 +1,241 @@
 {
-    "categorias": [
-      {
-        "id": 1,
-        "titulo": "All blue",
-        "cor": "#6BD1FF"
-      },
-      {
-        "id": 2,
-        "titulo": "Chapéus de Palha",
-        "cor": "#ff8c1a"
-      },
-      {
-        "id": 3,
-        "titulo": "Bruno Bandeira",
-        "cor": "#9cd33b"
-      },
-      {
-        "id": 4,
-        "titulo": "Canal MangaQ",
-        "cor": "#ff0000"
-      },
-      {
-        "id": 5,
-        "titulo": "Preview",
-        "cor": "#00C86F"
-      }
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "All blue",
+      "cor": "#6BD1FF"
+    },
+    {
+      "id": 2,
+      "titulo": "Chapéus de Palha",
+      "cor": "#ff8c1a"
+    },
+    {
+      "id": 3,
+      "titulo": "Bruno Bandeira",
+      "cor": "#9cd33b"
+    },
+    {
+      "id": 4,
+      "titulo": "Canal MangaQ",
+      "cor": "#ff0000"
+    },
+    {
+      "id": 5,
+      "titulo": "Preview",
+      "cor": "#00C86F"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "COMO ASSISTIR ONE PIECE E PORQUE EU AMO TANTO ESSE MANGÁ",
+      "url": "https://www.youtube.com/watch?v=Vwe0P9V390I"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "GUERRA MUNDIAL! KAIDO E AS ARMAS ANCESTRAIS",
+      "url": "https://www.youtube.com/watch?v=xoTQbKeUnEk"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "SANJI VS BASIL HAWKINS E X DRAKE",
+      "url": "https://www.youtube.com/watch?v=1oEVNXMtzc0"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "A LUA E A ORIGEM DE JOY BOY",
+      "url": "https://www.youtube.com/watch?v=goNZ9Yk3NCs&t"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "QUEEN MELHOR CALAMIDADE",
+      "url": "https://www.youtube.com/watch?v=Qi35cJEcpwk"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "O HAKI DO REI DE ZORO",
+      "url": "https://www.youtube.com/watch?v=wlX-fW22id0&t"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "SHANKS NO REINO DE GOA",
+      "url": "https://www.youtube.com/watch?v=nRw9JMyAuZE&t"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "ZORO VS KAMAZOU E O SEGREDO DA LÂMINA NEGRA",
+      "url": "https://www.youtube.com/watch?v=qixN-l0HGrY"
+    },
+    {
+      "id": 9,
+      "categoriaId": 1,
+      "titulo": "O HAKI DE ZORO ENTORTOU WANO",
+      "url": "https://www.youtube.com/watch?v=oNai_XuUs4g&t=657s"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "O PODER CAPAZ DE MUDAR O MUNDO",
+      "url": "https://www.youtube.com/watch?v=rLdb_GAD-Ko"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "QUAL O SIGNIFICADO DE LIBERDADE PARA YAMATO",
+      "url": "https://www.youtube.com/watch?v=CKYLTZB2RbI"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "MARCOS A FENIX",
+      "url": "https://www.youtube.com/watch?v=txCI091s2d4"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "titulo": "GOING MERRY",
+      "url": "https://www.youtube.com/watch?v=ZM_hzQfReeI"
+    },
+    {
+      "id": 14,
+      "categoriaId": 2,
+      "titulo": "LUGARES DE ONE PIECE NA VIDA REAL",
+      "url": "https://www.youtube.com/watch?v=HuqFk4DqWRQ"
+    },
+    {
+      "id": 15,
+      "categoriaId": 3,
+      "titulo": "A VERDADEIRA RELAÇÃO DE ACE E WANO",
+      "url": "https://www.youtube.com/watch?v=nx67Aq1IK2w"
+    },
+    {
+      "id": 16,
+      "categoriaId": 3,
+      "titulo": "O PIRATA QUE ESTÁ ACIMA DO PRÓPRIO KAIDOU",
+      "url": "https://www.youtube.com/watch?v=mpeIK6zd4DA"
+    },
+    {
+      "id": 17,
+      "categoriaId": 3,
+      "titulo": "COMO EIICHIRO ODA CONSTRÓI OS NÍVEIS DE PODER EM ONE PIECE",
+      "url": "https://www.youtube.com/watch?v=VaSPhsxVeZs"
+    },
+    {
+      "id": 18,
+      "categoriaId": 3,
+      "titulo": "O CAPÍTULO 1000 DE ONE PIECE",
+      "url": "https://www.youtube.com/watch?v=_9S7ik9bmOo"
+    },
+    {
+      "id": 19,
+      "categoriaId": 3,
+      "titulo": "O DESTINO DE CADA SHICHIBUKAI",
+      "url": "https://www.youtube.com/watch?v=KsBMcjP9Uqs"
+    },
+    {
+      "id": 19,
+      "categoriaId": 3,
+      "titulo": "A HISTÓRIA DE SHANKS O RUIVO",
+      "url": "https://www.youtube.com/watch?v=1jAQSzyGqKo"
+    },
+    {
+      "id": 20,
+      "categoriaId": 4,
+      "titulo": "ENTENDA ONE PIECE EM 30 MINUTOS",
+      "url": "https://www.youtube.com/watch?v=5W6NTdnQf_g"
+    },
+    {
+      "id": 21,
+      "categoriaId": 4,
+      "titulo": "A HISTÓRIA DE DOFLAMINGO",
+      "url": "https://www.youtube.com/watch?v=yFdKGI3OoHQ"
+    },
+    {
+      "id": 22,
+      "categoriaId": 4,
+      "titulo": "O HAKI EXPLICADO",
+      "url": "https://www.youtube.com/watch?v=VFR_3YqkkwA"
+    },
+    {
+      "id": 23,
+      "categoriaId": 4,
+      "titulo": "EXÉRCITO REVOLUCIONÁRIO",
+      "url": "https://www.youtube.com/watch?v=RoozdDcnfGM"
+    },
+    {
+      "id": 24,
+      "categoriaId": 4,
+      "titulo": "O CORPO E A ESCURIDÃO DE BARBA NEGRA",
+      "url": "https://www.youtube.com/watch?v=ZVnpzYCKB78"
+    },
+    {
+      "id": 24,
+      "categoriaId": 4,
+      "titulo": "One Piece – Preview 935",
+      "url": "https://www.youtube.com/watch?v=vX12GgyroX4"
+    },
+    {
+      "id": 25,
+      "categoriaId": 5,
+      "titulo": "One Piece – Preview 934",
+      "url": "https://www.youtube.com/watch?v=c7pT1JXgzJ4"
+    },
+    {
+      "id": 26,
+      "categoriaId": 5,
+      "titulo": "One Piece – Preview 933",
+      "url": "https://www.youtube.com/watch?v=4DIX1EfwJV4"
+    },
+    {
+      "id": 27,
+      "categoriaId": 5,
+      "titulo": "One Piece – Preview 932",
+      "url": "https://www.youtube.com/watch?v=aikJ7cZizpw"
+    },
+    {
+      "id": 28,
+      "categoriaId": 5,
+      "titulo": "One Piece – Preview 931",
+      "url": "https://www.youtube.com/watch?v=BIOHzmufIwM"
+    },
+    {
+      "id": 29,
+      "categoriaId": 5,
+      "titulo": "One Piece – Preview 930",
+      "url": "https://www.youtube.com/watch?v=O3fwADOlHa8"
+    },
+    {
+      "id": 30,
+      "categoriaId": 5,
+      "titulo": "One Piece – Preview 929",
+      "url": "https://www.youtube.com/watch?v=YE79DJ9nItk"
+    },
+    {
+      "id": 31,
+      "categoriaId": 5,
+      "titulo": "One Piece – Preview 928",
+      "url": "https://www.youtube.com/watch?v=DGMt3TjgE_E"
+    },
+    {
+      "titulo": "MAIS MORTES E O COMEÇO DO FIM",
+      "url": "https://www.youtube.com/watch?v=dnRhcnBYG14",
+      "categoriaId": 1,
+      "id": 32
+    },
+    {
+      "titulo": "KAIDO DERROTADO?O MOTIVO DO EDITOR DE ONE PIECE CHORAR",
+      "url": "https://www.youtube.com/watch?v=mU1qvVTzmOc",
+      "categoriaId": 4,
+      "id": 33
+    }
+  ]
 }

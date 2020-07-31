@@ -1,25 +1,30 @@
 import React from 'react';
+import styled, { css } from 'styled-components';
 import Menu from '../Menu';
 import Fotter from '../Footer';
-import styled from 'styled-components';
 
 const Main = styled.main`
     background-color: var(--black);
     color: var(--white);
     flex: 1;
-    padding :50px 5% 0 5% ; 
+    padding-top :50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    ${({paddingAll}) => css`
+        padding: ${paddingAll};
+    `}
 `;
 
-function PageDefault({ children }){
-    return(
-        <>
-            <Menu />
-                <Main>
-                    {children}
-                </Main>
-            <Fotter />
-        </>
-    )
+function PageDefault({ children, paddingAll }) {
+  return (
+    <>
+      <Menu />
+      <Main paddingAll={paddingAll}>
+        {children}
+      </Main>
+      <Fotter />
+    </>
+  );
 }
 
 export default PageDefault;

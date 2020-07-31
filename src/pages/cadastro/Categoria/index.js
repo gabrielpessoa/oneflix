@@ -1,77 +1,69 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import PaginaDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
+import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroCategoria() {
+  const history = useHistory();
   const valoresIniciais = {
     titulo: '',
-    descricao: '',
+    // descricao: '',
     cor: '',
   };
 
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
+
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
-
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor,
-    });
-  }
-
-  function handleChange(infosDoEvento) {
-    setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value,
-    );
-  }
 
   useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = 'https://oneflix.herokuapp.com/categorias';
-      fetch(URL)
-        .then(async (responseServidor) => {
-          if (responseServidor.ok) {
-            const response = await responseServidor.json();
-            setCategorias([...response]);
-            return;
-          } throw new Error('Não foi possível pegar os dados');
-        });
-    }
+    const URL_TOP = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://devsoutinhoflix.herokuapp.com/categorias';
+    fetch(URL_TOP)
+      .then(async (respostaDoServidor) => {
+        const resposta = await respostaDoServidor.json();
+        setCategorias([
+          ...resposta,
+        ]);
+      });
   }, []);
 
   return (
     <PaginaDefault>
-      <h1>Cadastro de Categoria</h1>
+      <h1>Cadastro de canal</h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
         infosDoEvento.preventDefault();
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
-
-        setValues(valoresIniciais);
+        categoriasRepository.create({
+          titulo: values.titulo,
+          cor: values.cor,
+        })
+          .then(() => {
+            // eslint-disable-next-line no-console
+            console.log('Cadastrou com sucesso!');
+            history.push('/');
+          });
       }}
       >
 
         <FormField
-          label="Nome da Categoria"
+          label="Nome do canal"
           type="text"
-          name="nome"
-          value={values.nome}
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
         />
 
-        <FormField
+        {/* <FormField
           label="Descrição"
           type="textarea"
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
-        />
+        /> */}
 
         <FormField
           label="Cor"
@@ -84,19 +76,20 @@ function CadastroCategoria() {
         <Button>Cadastrar</Button>
       </form>
 
-      {categorias.length === 0 && (
+      {/* {categorias.length === 0 && (
         <div>
           Loading...
         </div>
-      )}
+      )} */}
 
-      <ul>
+      {/* <ul>
         {categorias.map((categoria, indice) => (
+          // eslint-disable-next-line react/no-array-index-key
           <li key={`${categoria}${indice}`}>
             {categoria.titulo}
           </li>
         ))}
-      </ul>
+      </ul> */}
 
       <Link to="/">Ir para home</Link>
     </PaginaDefault>
